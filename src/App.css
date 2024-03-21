@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  min-height: 100vh;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar {
+  flex: 2;
+  border: 1px solid rgb(100, 100, 100);
+  background: #0d0f10;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.main {
+  flex: 9;
+  min-height: calc(100vh-14rem);
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+  margin:3rem 6rem;
+}
+
+.logo {
+  margin-right: 1rem;
+}
+
+.brand {
+  font-size: 2rem;
+  color: white;
+}
+
+
+
+.upperside {
+  
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.uppersideTop{
+  
+  
+}
+
+
+.midbtn {
+  border: none;
+  padding: 1rem;
+  margin-bottom : 15px;
+  color: rgba(222, 222, 222, 1);
+  font-size: 15px;
+  outline: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 16px;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  cursor: pointer; /* Add cursor pointer to indicate interactivity */
+}
+
+.querybtn {
+  color: rgba(222, 222, 222, 1);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer; /* Add cursor pointer to indicate interactivity */
+}
+
+.listItems {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.listItemsImg {
+  margin: 1rem;
+  height: 40px;
+  padding-right: 1rem;
+  font-size: 1rem; /* Adjust height as needed */
+}
+ .listItems:nth-child(1)>.listItemsImg{
+  margin-right: 1rem;
+ }
+
+.billing {
+  background: gray;
+  height: 20px;
+}
+.chatfooter{
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+.inp{
+  padding:0.5rem;
+  background: #1A1D21;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: 60rem;
+}
+.inp>input{
+  width: calc(100%-4rem);
+  flex: 1;
+  outline: none;
+  padding: 1.25rem;
+  color: #999;
+  font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+
+}
+.inp>input,.send{
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.inp > .send {
+  margin-left: 0.5rem; /* Add some margin to separate the button from the input field */
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.chats{
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 70rem;
+  height: calc(100vh-17rem);
+}
+.chat{
+  margin: 2rem;
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.chatimg{
+  object-fit: cover;
+  width: 2rem;
+  margin-right: 2.5rem;
+  border-radius: 0.5rem;
+
+}
+.add,.orbit,.AIimage,.brandRefresh,.social{
+  color: rgba(222, 222, 222, 1);
+ 
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer; 
 }
