@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+#openAI secretkey
+.axios.js
 # testing
 /coverage
 
