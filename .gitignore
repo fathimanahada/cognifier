@@ -6,8 +6,9 @@
 .pnp.js
 
 #openAI secretkey
-.axios.js
-/src/axios.js
+ImageGenerator.jsx
+/home/abc/Desktop/cognifier/chatbot/chat/src/ImageGenerator/ImageGenerator.jsx
+
 # testing
 /coverage
 
