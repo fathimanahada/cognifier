@@ -7,6 +7,7 @@
 
 #openAI secretkey
 .ImageGenerator.jsx
+.axios.js
 /ImageGenerator/ImageGenerator.jsx
 
 # testing
